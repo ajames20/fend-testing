@@ -67,9 +67,8 @@ $(function () {
 
     describe('Initial Entries', function () {
         // Set feed variable to select the .feed div
-        var feed = document.getElementsByClassName('feed')
+        var feed = document.getElementsByClassName('feed');
         // beforeEach pause for async calls to finish
-        console.log(feed)
         beforeEach(function (done) {
             // Test fails when called with loadFeed(4, done) because no index of 4 exists
             loadFeed(0, done);
