@@ -74,7 +74,7 @@ $(function () {
 
         // Check if the elements now exist in the DOM
         it('have at least one .entry element within the .feed container', function () {
-            expect($('.feed .entry').length).not.toBe(0)
+            expect($('.feed .entry').length).not.toBe(0);
         });
     });
 
