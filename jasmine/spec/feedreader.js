@@ -68,7 +68,7 @@ $(function () {
     describe('Initial Entries', function () {
 
         // Entry variable to look into the dom to see if children elements exists
-        var entry = document.getElementsByClassName('entry')
+        var entry = document.getElementsByClassName('entry');
 
         // beforeEach pause for async calls to finish
         beforeEach(function (done) {
@@ -94,7 +94,7 @@ $(function () {
             loadFeed(0, function () {
                 initial = document.querySelector('.feed').innerHTML;
                 done();
-            })
+            });
         });
 
         // Test to check if innerHTML content is different
