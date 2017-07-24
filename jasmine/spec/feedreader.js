@@ -66,10 +66,6 @@ $(function () {
     });
 
     describe('Initial Entries', function () {
-
-        // Entry variable to look into the dom to see if children elements exists
-        var entry = document.getElementsByClassName('entry');
-
         // beforeEach pause for async calls to finish
         beforeEach(function (done) {
             // Test fails when called with loadFeed(4, done) because no index of 4 exists
@@ -78,7 +74,7 @@ $(function () {
 
         // Check if the elements now exist in the DOM
         it('have at least one .entry element within the .feed container', function () {
-            expect(entry.length).toBeGreaterThan(0);
+            expect($('.feed .entry').length).not.toBe(0)
         });
     });
 
