@@ -12,7 +12,3 @@ Whether you work in an organization that uses test-driven development or in an o
 # How to run project
 
 Download or clone this [repo](https://github.com/ajames20/fend-testing.git) then open the index.html file in your browser. 
-
-
-
-
