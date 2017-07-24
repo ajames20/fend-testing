@@ -57,15 +57,15 @@ $(function () {
 
     /* TODO: Write a new test suite named "The menu" */
     describe('The menu', function () {
-        var body = document.body
-        var menuIcon = document.querySelector('.menu-icon-link')
+        var body = document.body;
+        var menuIcon = document.querySelector('.menu-icon-link');
         /* TODO: Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
 
-        // Check that menu is hiddien 
+        // Check that menu is hidden 
         it('is hidden by default', function () {
             expect(body.classList.contains('menu-hidden')).toEqual(true);
         });
@@ -96,7 +96,7 @@ $(function () {
              */
 
         // Feed variable to look into the dom to see if children elements exsits
-        var feed = document.getElementsByClassName('feed')
+        var feed = document.getElementsByClassName('feed');
 
         // beforeEach pause for async calls to finish
         beforeEach(function (done) {
