@@ -66,7 +66,10 @@ $(function () {
     });
 
     describe('Initial Entries', function () {
+        // Set feed variable to select the .feed div
+        var feed = document.getElementsByClassName('feed')
         // beforeEach pause for async calls to finish
+        console.log(feed)
         beforeEach(function (done) {
             // Test fails when called with loadFeed(4, done) because no index of 4 exists
             loadFeed(0, done);
@@ -74,7 +77,7 @@ $(function () {
 
         // Check if the elements now exist in the DOM
         it('have at least one .entry element within the .feed container', function () {
-            expect($('.feed .entry').length).not.toBe(0);
+            expect(feed[0].getElementsByClassName('entry')).not.toBe(0);
         });
     });
 
